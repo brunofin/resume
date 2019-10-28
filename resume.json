@@ -1,130 +1,239 @@
 {
-  "basics": {
-    "name": "Bruno Finger",
-    "label": "Senior Full-stack Developer",
-    "picture": "",
-    "email": "bruno.f@leanst.com",
-    "phone": "+48 500 343 880",
-    "website": "http://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+    "basics": {
+        "name": "Bruno Finger",
+        "label": "Senior Web Developer",
+        "picture": "https://i.imgur.com/z7nUfxo.png",
+        "email": "jobs@leanst.com",
+        "website": "https://leanstreet.io",
+        "summary": "Open-minded, 29 years old, currently living in Poland. In his spare time, he spends time with his family and daughters, learns music theory & production (and tries to make some cool sounding music), develops personal projects, plays games. Seeks an environment that is non-bureaucratic and uncomplicated, relaxed and modern in their ways of thinking, which enables fast-paced personal and professional growth and at the same time is challenging enough to learn. Wants to be valued and provide a good life for his family.",
+        "location": {
+            "city": "Poznan",
+            "countryCode": "PL"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "brunofin",
+                "url": "https://github.com/brunofin"
+            },
+            {
+                "network": "GitLab",
+                "username": "brunofin",
+                "url": "https://gitlab.com/brunofin"
+            },
+            {
+                "network": "SoundCloud",
+                "username": "B. Finger",
+                "url": "https://soundcloud.com/bruno-finger-323283221"
+            }
+        ]
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
-      },
-      {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
-      }
+    "work": [
+        {
+            "company": "17hats",
+            "position": "Senior Web Developer",
+            "website": "https://www.17hats.com",
+            "startDate": "2018-08-01",
+            "summary": "US-based, the 17hats platform provides their clients with full-featured Lead Management, Booking Coordination, Customer Onboarding, Workday and Workflow, and Financials systems in one place.",
+            "highlights": [
+                "Developed complex functionalities in React and KnockoutJS",
+                "Helped with the development of a standard custom UI framework in React",
+                "Migrated parts of the system from React to KnockoutJS",
+                "Developed a Zapier integration for the platform written in TypeScript, currently in beta phase"
+            ]
+        },
+        {
+            "company": "SAP SE, formerly Coresystems AG",
+            "position": "Senior Web Developer",
+            "website": "https://www.coresystems.net/",
+            "startDate": "2018-02-01",
+            "endDate": "2018-08-01",
+            "summary": "Coresystems AG is a software developing company, headquartered in Switzerland, and a provider of field service management solutions for technicians.",
+            "highlights": [
+                "Worked applying bug fixes and developing new features for a Workforce Management software used by clients with more than 10 thousand technicians on the field every day",
+                "Took part in the two-months long “Operation HardCore” writing missing tests for key components of the applications and modernizing the project structure",
+                "Was responsible for one of the main applications called “Configuration”, key responsibilities include deciding the best time to deploy the application directly to all the live clusters used by customers every day in the US, EU and DE (Germany has its own dedicated cluster) based on traffic logs, error logs and other information powered by Kibana and other powerful tools, and make the actual deployment through Bamboo"
+            ]
+        },
+        {
+            "company": "Seventh Ltda.",
+            "position": "Lead Web Developer",
+            "website": "https://www.seventh.com.br/",
+            "startDate": "2014-05-01",
+            "endDate": "2018-02-01",
+            "summary": "Seventh is a Brazilian company that develops technology for video surveillance (Seventh D-Guard). Founded in 2001, the company has been a pioneer in development of wide range of technologies for reception, transmission and storage of video streams trough the internet.",
+            "highlights": [
+                "Seventh D-Guard Web: a modernized web front-end for a video surveillance application: Started this project from scratch. Was responsible for managing and making decisions about this project. The development and management were given remotely. The goal of the project is the replacement of a desktop interface in Delphi by a modern web interface. This application allows full control of a security cameras monitoring system, including live video, motion detection settings, and compensation of distortion of fish-eye cameras. It involves the integration of a REST API with a system developed in AngularJS using Angular Material user interface",
+                "Seventh Situator: The Situator is a Physical Security Information Management system (PSIM), a web application for handling video events generated by D-Guard (the video surveillance application from the same company). Was part of the team developing the web front-end for the C# backend before assuming responsibility for the D-Guard Web project",
+                "Seventh Projects Calculator: The Seventh Projects Calculator was developed especially for use in projects that use the D-Guard projects system. Their use is essential to help estimate the servers, the bandwidth, the amount of storage and the necessary licenses for your video project monitoring"
+            ]
+        },
+        {
+            "company": "Dígitro Tecnologia Ltda.",
+            "position": "Developer",
+            "website": "https://www.digitro.com/",
+            "startDate": "2013-10-01",
+            "endDate": "2014-02-01",
+            "summary": "Digitro Tecnologia Ltda. was founded in 1975. The Company's line of business includes the manufacturing of radio and television broadcasting and communications equipment",
+            "highlights": [
+                "Was part of the core team responsible for developing a communication audit and log software used by the Brazilian courts"
+            ]
+        },
+        {
+            "company": "GBR Sistemas",
+            "position": "Developer",
+            "startDate": "2013-04-01",
+            "endDate": "2013-10-01",
+            "summary": "Worked co-managing the CREMESC's (Council of Medicine of the State of Santa Catarina) and CREFITO's (Regional Council of Physiotherapy) databases and organizing the associates' personal data into the system, as well as developing small to medium port Java desktop and Web systems for both organizations, varying from a postal labelling system to a subscription payment page. Worked remotely from Poland for 3 months."
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidade do Sul de Santa Catarina (UNISUL)",
+            "area": "Computer Science",
+            "studyType": "Bachelor of Science",
+            "startDate": "2008-01-01",
+            "endDate": "2013-01-01",
+            "courses": [
+                "Algorithms",
+                "Data structures",
+                "Databases",
+                "Boolean Logic",
+                "Circuitry",
+                "Software Development",
+                "Computer Networks",
+                "Operating Systems",
+                "Graphs Theory",
+                "Artificial Intelligence",
+                "2D Games",
+                "Compilers",
+                "Algorith Analysis",
+                "Software Engineering",
+                "Mobile Software Development",
+                "Web Software Development",
+                "Software and the Law"
+            ]
+        },
+        {
+            "institution": "Central Ostrobothnia University of Applied Sciences (CENTRIA)",
+            "area": "Finland",
+            "studyType": "Studies exchange (ERASMUS)",
+            "startDate": "2012-01-01",
+            "endDate": "2012-05-01"
+        },
+        {
+            "institution": "Conferences attended",
+            "courses": [
+                "Roche Code4Life 2015",
+                "Fedora Flock 2016",
+                "Meet.js Summit 2017",
+                "Code Europe 2018",
+                "Meet.js Summit 2018",
+                "Roche Code4Life 2019",
+                "Web Summit 2019"
+            ]
+        },
+        {
+            "institution": "Other Courses",
+            "courses": [
+                "Music Theory for Electronic Music Production, 2019",
+                "Modern React with Redux, 2018",
+                "ES6 Javascript: The Complete Developer's Guide, 2017",
+                "Academy of Java 128 hours OCJP/SCJP course, 2009"
+            ]
+        }
+    ],
+    "publications": [
+        {
+            "name": "Cardápio Digital para Tablets: Gerenciando Pedidos com a Plataforma Android",
+            "publisher": "Universidade do Sul de Santa Catarina",
+            "releaseDate": "2012-11-19",
+            "website": "https://books.google.pl/books?id=kVgfCgAAQBAJ&redir_esc=y",
+            "summary": "Computer Science final thesis publication. Graded 9.8 out of 10."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Programming languages & frameworks",
+            "level": "Pro",
+            "keywords": [
+                "React",
+                "Redux",
+                "AngularJS",
+                "Angular Material",
+                "KnockoutJS",
+                "ExtJS",
+                "Electron",
+                "NodeJS",
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "Django",
+                "Java",
+                "PHP",
+                "SCSS/SASS",
+                "CSS3",
+                "HTML5",
+                "Bootstrap"
+            ]
+        },
+        {
+            "name": "Infrastructure and Management",
+            "level": "Pro",
+            "keywords": [
+                "Grunt",
+                "Gulp",
+                "Jenkins",
+                "Bamboo",
+                "GitLab CI",
+                "CircleCI",
+                "Trac",
+                "JIRA",
+                "Vagrant",
+                "Docker"
+            ]
+        },
+        {
+            "name": "Other",
+            "level": "Pro",
+            "keywords": [
+                "Git",
+                "SVN",
+                "Windows",
+                "Linux",
+                "GitKraken",
+                "Photo Editing",
+                "Amazon Web Services",
+                "Google Cloud Engine",
+                "Google Maps API",
+                "OpenStreetMaps API",
+                "PostgreSQL",
+                "Bitcoin"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Portuguese",
+            "fluency": "5/5"
+        },
+        {
+            "language": "English",
+            "fluency": "5/5"
+        },
+        {
+            "language": "Polish",
+            "fluency": "3/5"
+        }
+    ],
+    "interests": [
+        {
+            "name": "General",
+            "keywords": [
+                "Digital Music Production",
+                "Painting & Drawing",
+                "Longboarding"
+            ]
+        }
     ]
-  },
-  "work": [
-    {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
-    },
-    {
-      "name": "Compression",
-      "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-    }
-  ]
 }

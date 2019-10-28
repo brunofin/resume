@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4000/ -->
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="./localhost_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./localhost_files/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Raleway:100,400,600,700);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+/* VARIABLES */
+:root{
+  --leanst-yellow: #F9D91B;
+  --leanst-black: #1B242B;
+  --leanst-white: #fff;
+  --leanst-pink: #e7004c;
+  --leanst-blue: #00bed6;
+  --leanst-links: #0096A7;
+  --leanst-lgrey: #EEF3F9;
+  --default-margin: 20px;
+}
+
+/* DESKTOP VIEW */
+body{
+  font-family: Raleway, "Open-sans", sans-serif;
+  font-weight: 400;
+  color: var(--leanst-black);
+  background: var(--leanst-black);
+}
+blockquote {
+  font-size: 1em;
+  border-left-color: var(--leanst-lgrey);
+}
+.list-group-item{
+  border-color: var(--leanst-lgrey);
+}
+a{
+  color: var(--leanst-links);
+  font-weight: 600;
+}
+
+a:hover,
+a:focus,
+a:active{
+  color: var(--leanst-blue);
+  opacity: .7;
+  text-decoration: none;
+}
+.hl {
+  position: relative;
+  height: 40px;
+  background-color: var(--leanst-black);
+  padding: 3px 20px;
+  -webkit-mask-position: left center;
+  -webkit-mask-size: auto 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: left center;
+  mask-size: auto 100%;
+  mask-repeat: no-repeat;
+  position: relative;
+  top:0;
+  -webkit-mask-image: url(stroke.svg);
+  mask-image: url(stroke.svg);
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+}
+.hl abbr{
+  position: relative;
+  top: -2px;
+  color: var(--leanst-yellow);
+
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+  padding-left: var(--default-margin);
+  padding-right: var(--default-margin);
+}
+.container{
+  margin-top: 120px;
+  margin-bottom: 80px;
+  background: var(--leanst-white);
+  position: relative;
+}
+.leanst-logo{
+  position: absolute;
+  left: 0;
+  top: -40px;
+  z-index: 1;
+}
+#bg-header{
+  background-color: var(--leanst-yellow);
+}
+#photo-header{
+  margin-top: -80px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: var(--leanst-black);
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span.title{
+  color: var(--leanst-black);
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: calc(100% + 30px);
+  height: 3px;
+  border-bottom: 1px solid var(--leanst-lgrey);
+  margin-top: var(--default-margin);
+  margin-left: -15px;
+  margin-right: -15px;
+  content: '';
+  display: block;
+}
+
+.box{
+  margin-bottom: calc(var(--default-margin)*2);
+}
+.box h2{
+  position: relative;
+  color: var(--leanst-black);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: var(--default-margin);
+  margin-bottom: calc(var(--default-margin)/2);
+}
+.box h2.clearfix .icon{
+  float: left;
+}
+.box h2 .icon{
+  display: inline-block;
+  width: 50px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.box h2 .icon[src$="about.svg"] {
+  margin-left: -7px;
+}
+.box h2 .icon[src$="experience.svg"] {
+  margin-left: -2px;
+  margin-right: 7px;
+}
+.box h2 .icon[src$="contact.svg"] {
+  margin-left: -12px;
+  margin-right: 2px;
+}
+.box h2 .icon[src$="skills.svg"] {
+  margin-left: -2px;
+  margin-right: 9px;
+}
+.box h2 .icon[src$="edu.svg"] {
+  margin-left: -5px;
+  margin-right: 5px;
+}
+.box h2 .icon[src$="lang.svg"] {
+  margin-left: -3px;
+  margin-right: 7px;
+}
+.box h2 .icon[src$="interests.svg"] {
+  margin-left: -2px;
+  margin-right: 5px;
+}
+.box h2 .icon[src$="volunteer.svg"] {
+  margin-left: -1px;
+  margin-right: 8px;
+}
+.box h2 span{
+  position: absolute;
+  bottom: -3px;
+}
+#awards, #certifications,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before, #certifications:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: var(--leanst-black);
+  background: -moz-linear-gradient(top,  var(--leanst-white) 0%, var(--leanst-black) 7%, var(--leanst-black) 89%, var(--leanst-white) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,var(--leanst-white)), color-stop(7%,var(--leanst-black)), color-stop(89%,var(--leanst-black)), color-stop(100%,var(--leanst-white)));
+  background: -webkit-linear-gradient(top,  var(--leanst-white) 0%,var(--leanst-black) 7%,var(--leanst-black) 89%,var(--leanst-white) 100%);
+  background: -o-linear-gradient(top,  var(--leanst-white) 0%,var(--leanst-black) 7%,var(--leanst-black) 89%,var(--leanst-white) 100%);
+  background: -ms-linear-gradient(top,  var(--leanst-white) 0%,var(--leanst-black) 7%,var(--leanst-black) 89%,var(--leanst-white) 100%);
+  background: linear-gradient(to bottom,  var(--leanst-white) 0%,var(--leanst-black) 7%,var(--leanst-black) 89%,var(--leanst-white) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--leanst-white)', endColorstr='var(--leanst-white)',GradientType=0 );
+}
+#awards li, #certifications li, 
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year, #certifications .year,
+#education .year{
+  width: 14%;
+  background: var(--leanst-white);
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description, #certifications .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: var(--leanst-lgrey);
+  margin-bottom: var(--default-margin);
+  position: relative;
+  padding: 10px;
+}
+#awards .description:after, #certifications .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: var(--leanst-lgrey);
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3, #certifications .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p, #certifications .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 15px;
+  width: calc(100% - 30px);
+  padding: var(--default-margin);
+  margin-bottom: var(--default-margin);
+  background: var(--leanst-lgrey);
+  color: var(--leanst-black);
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--leanst-black) ;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: calc(var(--default-margin)/2) 0 calc(var(--default-margin)/4) ;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: calc(var(--default-margin) + 15px);
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+  opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  background: var(--leanst-white);
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: var(--leanst-pink);
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: var(--leanst-black);
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: var(--leanst-yellow);
+  color: var(--leanst-black);
+  position: relative;
+  font-size: .85em;
+}
+.interest.badge a{
+  color: var(--leanst-black);
+  text-decoration: underline;
+}
+.skill-level {
+  background-color: var(--leanst-pink);
+  border-radius: 4px;
+  color: var(--leanst-white);
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
+.language-star{
+  color: var(--leanst-yellow);
+}
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 767px){
+  .leanst-logo{
+    left: 50%;
+    top: -110px;
+    transform: translateX(-50%) scale(0.8);
+  }
+}
+
+/* PRINT VIEW */
+@media print{
+
+}
+
+    </style>
+    <style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+
+blockquote,
+#education,
+#awards,
+#certifications,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
+
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education,  #certifications {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before, #certifications:before,
+#education:before {
+  background: none;
+}
+
+#awards .description, #certifications .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.badge {
+  margin: 0;
+}
+
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
+
+ .skill-level{
+   border: .2px solid gray;
+   
+ }
+    </style>
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div class="container">
+      <a class="leanst-logo" href="https://leanstreet.io/">
+        <img src="./localhost_files/leanst-logo-white.svg" alt="leanstreet logo" width="185">
+      </a>
+      <div class="row">
+        <div id="bg-header" class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="./localhost_files/z7nUfxo.png" alt="avatar">
+            </div>
+            <div id="text-header">
+              <h1><span class="hl"><abbr class="name">Bruno Finger</abbr></span><br><span class="title">Senior Web Developer</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-md-8">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><img class="icon" src="./localhost_files/icon-about.svg">About</h2>
+            <p>Open-minded, 29 years old, currently living in Poland. In his spare time, he spends time with his family and daughters, learns music theory &amp; production (and tries to make some cool sounding music), develops personal projects, plays games. Seeks an environment that is non-bureaucratic and uncomplicated, relaxed and modern in their ways of thinking, which enables fast-paced personal and professional growth and at the same time is challenging enough to learn. Wants to be valued and provide a good life for his family.</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><img class="icon" src="./localhost_files/icon-experience.svg">Work Experience</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">17hats</div>
+                    <div class="address">
+                      <a href="https://www.17hats.com/" target="_blank"><i class="fa fa-globe ico"></i> https://www.17hats.com</a>
+                    </div>
+                    <!-- <div class="year">August 2018 – Present</div> -->
+                    <div class="year">2018 – Present</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Web Developer</div>
+                    <div class="description">
+                      US-based, the 17hats platform provides their clients with full-featured Lead Management, Booking Coordination, Customer Onboarding, Workday and Workflow, and Financials systems in one place.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Developed complex functionalities in React and KnockoutJS</li>
+                        <li class="list-group-item">Helped with the development of a standard custom UI framework in React</li>
+                        <li class="list-group-item">Migrated parts of the system from React to KnockoutJS</li>
+                        <li class="list-group-item">Developed a Zapier integration for the platform written in TypeScript, currently in beta phase</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">SAP SE, formerly Coresystems AG</div>
+                    <div class="address">
+                      <a href="https://www.coresystems.net/" target="_blank"><i class="fa fa-globe ico"></i> https://www.coresystems.net/</a>
+                    </div>
+                    <!-- <div class="year">February 2018 – August 2018</div> -->
+                    <div class="year">2018 – 2018</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Senior Web Developer</div>
+                    <div class="description">
+                      Coresystems AG is a software developing company, headquartered in Switzerland, and a provider of field service management solutions for technicians.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Worked applying bug fixes and developing new features for a Workforce Management software used by clients with more than 10 thousand technicians on the field every day</li>
+                        <li class="list-group-item">Took part in the two-months long “Operation HardCore” writing missing tests for key components of the applications and modernizing the project structure</li>
+                        <li class="list-group-item">Was responsible for one of the main applications called “Configuration”, key responsibilities include deciding the best time to deploy the application directly to all the live clusters used by customers every day in the US, EU and DE (Germany has its own dedicated cluster) based on traffic logs, error logs and other information powered by Kibana and other powerful tools, and make the actual deployment through Bamboo</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Seventh Ltda.</div>
+                    <div class="address">
+                      <a href="https://www.seventh.com.br/" target="_blank"><i class="fa fa-globe ico"></i> https://www.seventh.com.br/</a>
+                    </div>
+                    <!-- <div class="year">May 2014 – February 2018</div> -->
+                    <div class="year">2014 – 2018</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Lead Web Developer</div>
+                    <div class="description">
+                      Seventh is a Brazilian company that develops technology for video surveillance (Seventh D-Guard). Founded in 2001, the company has been a pioneer in development of wide range of technologies for reception, transmission and storage of video streams trough the internet.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Seventh D-Guard Web: a modernized web front-end for a video surveillance application: Started this project from scratch. Was responsible for managing and making decisions about this project. The development and management were given remotely. The goal of the project is the replacement of a desktop interface in Delphi by a modern web interface. This application allows full control of a security cameras monitoring system, including live video, motion detection settings, and compensation of distortion of fish-eye cameras. It involves the integration of a REST API with a system developed in AngularJS using Angular Material user interface</li>
+                        <li class="list-group-item">Seventh Situator: The Situator is a Physical Security Information Management system (PSIM), a web application for handling video events generated by D-Guard (the video surveillance application from the same company). Was part of the team developing the web front-end for the C# backend before assuming responsibility for the D-Guard Web project</li>
+                        <li class="list-group-item">Seventh Projects Calculator: The Seventh Projects Calculator was developed especially for use in projects that use the D-Guard projects system. Their use is essential to help estimate the servers, the bandwidth, the amount of storage and the necessary licenses for your video project monitoring</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Dígitro Tecnologia Ltda.</div>
+                    <div class="address">
+                      <a href="https://www.digitro.com/" target="_blank"><i class="fa fa-globe ico"></i> https://www.digitro.com/</a>
+                    </div>
+                    <!-- <div class="year">October 2013 – February 2014</div> -->
+                    <div class="year">2013 – 2014</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Developer</div>
+                    <div class="description">
+                      Digitro Tecnologia Ltda. was founded in 1975. The Company's line of business includes the manufacturing of radio and television broadcasting and communications equipment
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Was part of the core team responsible for developing a communication audit and log software used by the Brazilian courts</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">GBR Sistemas</div>
+                    <!-- <div class="year">April 2013 – October 2013</div> -->
+                    <div class="year">2013 – 2013</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Developer</div>
+                    <div class="description">
+                      Worked co-managing the CREMESC's (Council of Medicine of the State of Santa Catarina) and CREFITO's (Regional Council of Physiotherapy) databases and organizing the associates' personal data into the system, as well as developing small to medium port Java desktop and Web systems for both organizations, varying from a postal labelling system to a subscription payment page. Worked remotely from Poland for 3 months.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+        <div class="col-xs-12 col-sm-5 col-md-4">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><img class="icon" src="./localhost_files/icon-contact.svg">Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+              
+              <div class="title only  pull-right">Poznan PL</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:jobs@leanst.com" target="_blank">jobs@leanst.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https://leanstreet.io/" target="_blank">https://leanstreet.io</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+              <div class="title pull-right">GitHub</div>
+              <div class="description pull-right"><a href="https://github.com/brunofin" target="_blank">brunofin</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-gitlab fa-fw"></span></div>
+              <div class="title pull-right">GitLab</div>
+              <div class="description pull-right"><a href="https://gitlab.com/brunofin" target="_blank">brunofin</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-soundcloud fa-fw"></span></div>
+              <div class="title pull-right">SoundCloud</div>
+              <div class="description pull-right"><a href="https://soundcloud.com/bruno-finger-323283221" target="_blank">B. Finger</a></div>
+            </div>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><img class="icon" src="./localhost_files/icon-skills.svg">Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Programming languages &amp; frameworks
+                  <span class="skill-level">Pro</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">React</span>
+                <span class="skill badge">Redux</span>
+                <span class="skill badge">AngularJS</span>
+                <span class="skill badge">Angular Material</span>
+                <span class="skill badge">KnockoutJS</span>
+                <span class="skill badge">ExtJS</span>
+                <span class="skill badge">Electron</span>
+                <span class="skill badge">NodeJS</span>
+                <span class="skill badge">JavaScript</span>
+                <span class="skill badge">TypeScript</span>
+                <span class="skill badge">Python</span>
+                <span class="skill badge">Django</span>
+                <span class="skill badge">Java</span>
+                <span class="skill badge">PHP</span>
+                <span class="skill badge">SCSS/SASS</span>
+                <span class="skill badge">CSS3</span>
+                <span class="skill badge">HTML5</span>
+                <span class="skill badge">Bootstrap</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Infrastructure and Management
+                  <span class="skill-level">Pro</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">Grunt</span>
+                <span class="skill badge">Gulp</span>
+                <span class="skill badge">Jenkins</span>
+                <span class="skill badge">Bamboo</span>
+                <span class="skill badge">GitLab CI</span>
+                <span class="skill badge">CircleCI</span>
+                <span class="skill badge">Trac</span>
+                <span class="skill badge">JIRA</span>
+                <span class="skill badge">Vagrant</span>
+                <span class="skill badge">Docker</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Other
+                  <span class="skill-level">Pro</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class="skill badge">Git</span>
+                <span class="skill badge">SVN</span>
+                <span class="skill badge">Windows</span>
+                <span class="skill badge">Linux</span>
+                <span class="skill badge">GitKraken</span>
+                <span class="skill badge">Photo Editing</span>
+                <span class="skill badge">Amazon Web Services</span>
+                <span class="skill badge">Google Cloud Engine</span>
+                <span class="skill badge">Google Maps API</span>
+                <span class="skill badge">OpenStreetMaps API</span>
+                <span class="skill badge">PostgreSQL</span>
+                <span class="skill badge">Bitcoin</span>
+              </div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2 class="clearfix"><img class="icon" src="./localhost_files/icon-edu.svg"><span>Education &amp; Training</span></h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2008 2013</div>
+                <div class="description pull-right">
+                  <h3>Universidade do Sul de Santa Catarina (UNISUL)</h3>
+                  <p><i class="fa fa-graduation-cap ico"></i> Bachelor of Science</p>
+                  <p>Computer Science</p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Algorithms</li>
+                      <li class="list-group-item">Data structures</li>
+                      <li class="list-group-item">Databases</li>
+                      <li class="list-group-item">Boolean Logic</li>
+                      <li class="list-group-item">Circuitry</li>
+                      <li class="list-group-item">Software Development</li>
+                      <li class="list-group-item">Computer Networks</li>
+                      <li class="list-group-item">Operating Systems</li>
+                      <li class="list-group-item">Graphs Theory</li>
+                      <li class="list-group-item">Artificial Intelligence</li>
+                      <li class="list-group-item">2D Games</li>
+                      <li class="list-group-item">Compilers</li>
+                      <li class="list-group-item">Algorith Analysis</li>
+                      <li class="list-group-item">Software Engineering</li>
+                      <li class="list-group-item">Mobile Software Development</li>
+                      <li class="list-group-item">Web Software Development</li>
+                      <li class="list-group-item">Software and the Law</li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2012 2012</div>
+                <div class="description pull-right">
+                  <h3>Central Ostrobothnia University of Applied Sciences (CENTRIA)</h3>
+                  <p><i class="fa fa-graduation-cap ico"></i> Studies exchange (ERASMUS)</p>
+                  <p>Finland</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left"> Present</div>
+                <div class="description pull-right">
+                  <h3>Conferences attended</h3>
+                  
+                  <p></p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Roche Code4Life 2015</li>
+                      <li class="list-group-item">Fedora Flock 2016</li>
+                      <li class="list-group-item">Meet.js Summit 2017</li>
+                      <li class="list-group-item">Code Europe 2018</li>
+                      <li class="list-group-item">Meet.js Summit 2018</li>
+                      <li class="list-group-item">Roche Code4Life 2019</li>
+                      <li class="list-group-item">Web Summit 2019</li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left"> Present</div>
+                <div class="description pull-right">
+                  <h3>Other Courses</h3>
+                  
+                  <p></p>
+                    <div>Courses</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Music Theory for Electronic Music Production, 2019</li>
+                      <li class="list-group-item">Modern React with Redux, 2018</li>
+                      <li class="list-group-item">ES6 Javascript: The Complete Developer's Guide, 2017</li>
+                      <li class="list-group-item">Academy of Java 128 hours OCJP/SCJP course, 2009</li>
+                    </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- PUBLICATIONS -->
+          <div class="box">
+            <h2><img class="icon" src="./localhost_files/icon-pubs.svg">Publications</h2>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">Cardápio Digital para Tablets: Gerenciando Pedidos com a Plataforma Android</div>
+              </div>
+              <div class="panel-body">
+                <div class="publisher"><i class="fa fa-bookmark ico"></i> Universidade do Sul de Santa Catarina</div>
+                <div class="year">19 November  2012</div>
+                <div class="address">
+                  <a href="https://books.google.pl/books?id=kVgfCgAAQBAJ&amp;redir_esc=y" target="_blank"><i class="fa fa-globe ico"></i> https://books.google.pl/books?id=kVgfCgAAQBAJ&amp;redir_esc=y</a>
+                </div>
+                <p>Computer Science final thesis publication. Graded 9.8 out of 10.</p>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2><img class="icon" src="./localhost_files/icon-lang.svg">Languages</h2>
+            <ul class="list-group">
+              <li class=" list-group-item">Portuguese
+                  <span class="skill badge pull-right">5/5</span>
+              </li>
+              <li class=" list-group-item">English
+                  <span class="skill badge pull-right">5/5</span>
+              </li>
+              <li class=" list-group-item">Polish
+                  <span class="skill badge pull-right">3/5</span>
+              </li>
+            </ul>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><img class="icon" src="./localhost_files/icon-interests.svg">Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  General
+              </div>
+              <div class="col-sm-12 clearfix">
+                <span class="interest badge">Digital Music Production</span>
+                <span class="interest badge">Painting &amp; Drawing</span>
+                <span class="interest badge">Longboarding</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
